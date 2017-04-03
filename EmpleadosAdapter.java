@@ -32,16 +32,16 @@ public class EmpleadosAdapter extends ArrayAdapter<Empleado> {
         nameTextView.setText(currentAndroidFlavor.getNombre());
 
         TextView nameTextView2 = (TextView) listItemView.findViewById(R.id.ape_empl);
-        nameTextView2.setText(currentAndroidFlavor.getNombre());
+        nameTextView2.setText(currentAndroidFlavor.getApellidos());
 
         TextView nameTextView3 = (TextView) listItemView.findViewById(R.id.dni_empl);
-        nameTextView3.setText(currentAndroidFlavor.getNombre());
+        nameTextView3.setText(currentAndroidFlavor.getDni());
 
         TextView nameTextView4 = (TextView) listItemView.findViewById(R.id.puesto_empl);
-        nameTextView4.setText(currentAndroidFlavor.getNombre());
+        nameTextView4.setText(currentAndroidFlavor.getPuesto());
 
         TextView nameTextView5 = (TextView) listItemView.findViewById(R.id.funcion_empl);
-        nameTextView5.setText(currentAndroidFlavor.getNombre());
+        nameTextView5.setText(currentAndroidFlavor.getFuncion());
 
         return listItemView;
 

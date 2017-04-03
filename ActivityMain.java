@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class ActivityMain extends AppCompatActivity {
 
-        Button addEmp, verEmp, aa;
+        Button addEmp, verEmp;
 
 
     @Override
