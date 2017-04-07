@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class ActivityMain extends AppCompatActivity {
 
-        Button addEmp, verEmp;
+        Button addEmp, verEmp, addJefe, verJefe;
 
 
     @Override
@@ -20,6 +20,7 @@ public class ActivityMain extends AppCompatActivity {
 
         addEmp=(Button)findViewById(R.id.btn_addEmp);
         verEmp=(Button)findViewById(R.id.btn_verEmpleado);
+        addJefe=(Button)findViewById(R.id.btn_anadirJefe);
 
         addEmp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +39,11 @@ public class ActivityMain extends AppCompatActivity {
             }
         });
 
+    }
+
+    void addJefe(View view){
+        Intent myintent = new Intent(ActivityMain.this, addJefe.class);
+        startActivity(myintent);
     }
 
 }

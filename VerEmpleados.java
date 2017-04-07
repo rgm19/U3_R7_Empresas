@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -20,6 +21,8 @@ public class VerEmpleados extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ver_empleados);
+
+        final Toast mensaje= Toast.makeText(this,Bd.numLista(),Toast.LENGTH_LONG);
 
         EmpleadosAdapter arrayAdapter=new EmpleadosAdapter(this, Bd.empleados);
         ListView listView = (ListView)findViewById(R.id.activity_ver_empleados);

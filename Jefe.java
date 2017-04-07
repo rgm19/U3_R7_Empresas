@@ -13,7 +13,8 @@ public class Jefe extends Persona{
 
     Jefe(){}
 
-    Jefe(String departamento, ArrayList empleados){
+    Jefe(String nombre, String apellidos, String dni, String departamento, ArrayList empleados){
+        super(nombre,apellidos,dni);
         this.departamento=departamento;
         this.empleados=empleados;
     }
@@ -31,7 +32,7 @@ public class Jefe extends Persona{
         this.empleados = empleados;
     }
 
-    public String getDeàrtamento() {
+    public String getDepartamento() {
         return departamento;
     }
 
